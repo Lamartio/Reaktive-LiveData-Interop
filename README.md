@@ -11,7 +11,7 @@ fun example(owner:LifecycleOwner) {
 
 observableOf(1,2,3).toLiveData(
     onError = { error -> }, // custom handler for the Observable.onError
-    onNextFactory = { liveData -> (liveData::postValue) } // Default is .setValue
+    onNextFactory = { liveData -> (liveData::postValue) } // Default is liveData::setValue
 )
 
 ```
