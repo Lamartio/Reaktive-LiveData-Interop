@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+def kotlin_version = ext.hasProperty('kotlin_version') ? ext.kotlin_version : '1.3.30'
+def livedata_version = ext.hasProperty('livedata_version') ? ext.kotlin_version : '2.1.0-alpha04'
+def reaktive_version = ext.hasProperty('reaktive_version') ? ext.kotlin_version : '1.0.0-alpha1'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+    implementation "com.github.badoo.reaktive:reaktive-jvm:$reaktive_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$livedata_version"
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation "androidx.arch.core:core-testing:2.0.1"
+    testImplementation "androidx.lifecycle:lifecycle-extensions:$livedata_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+    testImplementation "com.jraska.livedata:testing-ktx:1.1.0"
+}
