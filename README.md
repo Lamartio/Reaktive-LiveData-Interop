@@ -1,5 +1,5 @@
 # Reaktive-LiveData-Interop
-Interop for working with LiveData and the KMP implementation of Rx
+Interop for working with LiveData and the [https://github.com/badoo/Reaktive](KMP implementation) of Rx.
 
 
 ``` Kotlin
