@@ -2,12 +2,15 @@ package io.lamart.reaktive.livedata.interop
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
+import com.badoo.reaktive.observable.observableByEmitter
 import com.badoo.reaktive.observable.observableOf
+import com.badoo.reaktive.utils.reaktiveUncaughtErrorHandler
 import com.jraska.livedata.test
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
+import kotlin.test.assertSame
 
 class Tests {
 
@@ -34,6 +37,19 @@ class Tests {
     }
 
     @Test
+    fun toLiveDataWithError() {
+        val error = Throwable()
+        val handler = reaktiveUncaughtErrorHandler
+
+        reaktiveUncaughtErrorHandler = { assertSame(error, it) }
+        observableByEmitter<Int> { it.onError(error) }
+            .toLiveData()
+            .test()
+            .assertNoValue()
+        reaktiveUncaughtErrorHandler = handler
+    }
+
+    @Test
     fun toObservable() {
         val data = MutableLiveData<Int>()
         val observer = data.toObservable(owner).test()
@@ -43,7 +59,6 @@ class Tests {
         data.value = 3
 
         observer.assertValues(1, 2, 3)
-
     }
 }
 
