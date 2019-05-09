@@ -1,3 +1,4 @@
+[![Gitter](https://badges.gitter.im/LiveDataUtils/Reaktive-LiveData-Interop.svg)](https://gitter.im/LiveDataUtils/Reaktive-LiveData-Interop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 # Reaktive-LiveData-Interop
 Interop for working with LiveData and the [KMP implementation](https://github.com/badoo/Reaktive) of Rx.
 
