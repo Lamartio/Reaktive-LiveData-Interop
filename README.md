@@ -6,9 +6,9 @@ Interop for working with LiveData and the [KMP implementation](https://github.co
 
 
 ``` Kotlin
-fun example(owner:LifecycleOwner) {
+fun example(owner: LifecycleOwner) {
     observableOf(1,2,3) // Creates a Reaktive Observable
-        .toLiveData () // Converts it to a LiveData
+        .toLiveData() // Converts it to a LiveData
         .toObservable(owner) // Converts it back to an Observable
 }
 
