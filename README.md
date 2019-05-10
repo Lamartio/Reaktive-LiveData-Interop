@@ -1,3 +1,4 @@
+[ ![Download](https://api.bintray.com/packages/lamartio/maven/Reaktive-LiveData-Interop/images/download.svg) ](https://bintray.com/lamartio/maven/Reaktive-LiveData-Interop/_latestVersion)
 [![Gitter](https://badges.gitter.im/LiveDataUtils/Reaktive-LiveData-Interop.svg)](https://gitter.im/LiveDataUtils/Reaktive-LiveData-Interop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![License](https://img.shields.io/hexpm/l/plug.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 # Reaktive-LiveData-Interop
