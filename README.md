@@ -1,6 +1,7 @@
 [ ![Download](https://api.bintray.com/packages/lamartio/maven/Reaktive-LiveData-Interop/images/download.svg) ](https://bintray.com/lamartio/maven/Reaktive-LiveData-Interop/_latestVersion)
 [![Gitter](https://badges.gitter.im/LiveDataUtils/Reaktive-LiveData-Interop.svg)](https://gitter.im/LiveDataUtils/Reaktive-LiveData-Interop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![License](https://img.shields.io/hexpm/l/plug.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Reaktive--LiveData--Interop-green.svg?style=flat )]( https://android-arsenal.com/details/1/7653 )
 # Reaktive-LiveData-Interop
 Interop for working with LiveData and the [KMP implementation](https://github.com/badoo/Reaktive) of Rx.
 
