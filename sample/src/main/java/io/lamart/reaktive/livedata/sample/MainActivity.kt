@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProviders
 import com.badoo.reaktive.observable.subscribe
 import io.lamart.reaktive.livedata.interop.toObservable
+import io.lamart.reaktive.livedata.sample.databinding.MainBinding
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         DataBindingUtil
-            .inflate<io.lamart.reaktive.livedata.sample.databinding.MainBinding>(
+            .inflate<MainBinding>(
                 layoutInflater,
                 R.layout.main,
                 null,
