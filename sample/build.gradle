@@ -30,7 +30,8 @@ android {
 }
 
 dependencies {
-    implementation 'io.lamart.livedata:reaktive-livedata-interop:0.9.1'
+    implementation project(':library')
+//    implementation 'io.lamart.livedata:reaktive-livedata-interop:0.9.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
